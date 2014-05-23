@@ -1,0 +1,261 @@
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+
+body, html{
+  margin: 0px;
+  padding: 0px;
+  background-color: #D6F1F0;
+}
+.call_outs{
+  width: 250px;
+  display: inline;
+  // padding: 2%;
+  margin: auto;
+
+}
+#twins{
+  padding: 3px;
+}
+#triplets{
+  padding: 3px;
+}
+#quads{
+  padding: 3px;
+
+}
+#bottom_line{
+  margin: auto;
+}
+#american_horror{
+  padding: 3px;
+}
+#children_of_the_corn{
+  padding: 3px;
+}
+#tree{
+  float: right;
+  // width: 80%;
+}
+.space{
+  width: 30px;
+  height: 20px;
+}
+.largeSpace{
+  width: 30px;
+  height: 75px;
+}
+#shop_now{
+
+}
+header, footer {
+  ul {
+    // padding-right: %;
+    li {
+      display: inline;
+      width: 95px;
+      text-align: center;
+      padding: 1px !important;
+    }
+  }
+}
+
+header{
+  // margin-top: 80px;
+  text-align:center;
+  background-color: #D6F1F0;
+  .container{
+    background-color: white;
+    -webkit-border-top-left-radius: 40px;
+    -webkit-border-top-right-radius: 40px;
+    -moz-border-radius-topleft: 40px;
+    -moz-border-radius-topright: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+}
+
+#content {
+  @include grid-row();
+  $left-column-size: 6;
+  $right-column-size: 12 - $left-column-size;
+  .left-column {
+    @include grid-column($left-column-size);
+  }
+  .right-column {
+    @include grid-column($right-column-size);
+  }
+}
+ul, ol, dl {
+font-size: 1em;
+line-height: 1em;
+margin-bottom: 0px;
+list-style-position: none;
+font-family: inherit;
+}
+
+$small-range: (0em, 30em); /* 0, 640px */
+$small-only: "#{$screen} and (max-width: 40em)" !default;
+@media #{$small-only} {
+  #content {
+    .left-column, .right-column {
+      @include grid-column(12);
+    }
+  }
+}
+
+.clear{
+  display: block;
+  clear: both;
+}
+
+.container{
+  clear: both;
+  margin: auto;
+  width: 85%;
+}
+
+#bottom{
+  background-color:#5CB4BA;
+  .container{
+    background-color: white;
+    -webkit-border-bottom-right-radius: 40px;
+    -webkit-border-bottom-left-radius: 40px;
+    -moz-border-radius-bottomright: 40px;
+    -moz-border-radius-bottomleft: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+#content{
+padding: none;
+}
+
+ul#devise_navigation{
+  li{
+    float: right;
+    background-color: #D6F1F0;
+    position: relative;
+    bottom: 30px;
+    right: 50px;
+  }
+}
+
+#devise_navigation{
+  display: inline;
+  li{
+    width: auto;
+  }
+}
+
+.logo{
+  float: left;
+  width: 40%;
+  position: relative;
+  top: 125px;
+}
+
+#tagline{
+  font-family: 'Francois One', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #4DA6AD;
+  width: 100%;
+  position: relative;
+  bottom: 15px;
+}
+
+#page_navigation{
+  margin-right: 15px;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+  max-width: 55%;
+
+  a{
+
+    display: inline-block;
+    color: white;
+    position: relative;
+
+  }
+}
+#about{
+  background-color:#78CBD1;
+}
+#contact{
+    background-color:#8EB73C;
+}
+#blog{
+  background-color:#6F308C;
+}
+#press{
+  background-color: #E9168C;
+}
+
+.divider{
+  color: #4DA6AD;
+
+}
+
+#main_navigation{
+  font-family: 'Francois One', sans-serif;
+  font-weight: bold;
+  clear: both;
+  background-color: #F4CBD3;
+  text-align: center;
+  li{
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    a{
+      display: block;
+      color: #71214D;
+      font-weight: bold;
+    }
+  }
+}
+
+h2{
+  font-family: 'Francois One', sans-serif;
+  font-weight: bold;
+  float: left;
+  color:#8EB73D;
+  // position: relative;
+  font-size: 18px;
+}
+
+h3{
+  font-family: 'Francois One', sans-serif;
+  font-weight: bold;
+  color:#5CB4BA;
+  position: relative;
+  display: inline;
+  font-size: 14px;
+}
+
+owl_32{
+}
+
+#shop_now{
+  a{
+  border-radius: 25px;
+  background-color: #E9168C;
+  }
+}
+
+
+footer{
+  padding: 10px;
+  height: 150px;
+  background-color:#5CB4BA;
+
+  ul{
+    text-align: center;
+    li{
+      color: #D3EFEE;
+    }
+  }
+}
