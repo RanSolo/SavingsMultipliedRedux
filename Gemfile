@@ -37,6 +37,9 @@ group :test, :development do
   gem 'webmock'
 end
 
+group :production do
+  gem 'rails_12factor', '0.0.2'
+end
    # gem 'email_spec'
    # gem 'letter_opener'
    # gem 'vcr'
